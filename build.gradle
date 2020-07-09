@@ -1,0 +1,37 @@
+group 'in.wasim.test'
+version '1.0.0'
+
+apply plugin: 'scala'
+apply plugin: 'idea'
+
+
+apply from: file("${rootDir}/gradle/app.gradle")
+
+
+repositories {
+//    mavenCentral()
+//    mavenLocal()
+    jcenter()
+
+}
+
+dependencies {
+    compile "org.apache.spark:spark-sql_2.11:2.2.1"
+    compile group: 'org.apache.hadoop', name: 'hadoop-mapreduce-client-core', version: '2.7.1'
+    compile "org.apache.hadoop:hadoop-common:2.7.1"
+    compile "org.scala-lang:scala-library:2.11.8"
+    compile "net.liftweb:lift-json_2.11:3.3.0"
+    compile group: 'org.scala-lang', name: 'scala-reflect', version: '2.11.8'
+    compile 'org.slf4j:slf4j-api:1.7.6'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+    compile 'junit:junit:4.12'
+    compile 'org.scalatest:scalatest_2.11:3.0.1'
+    // https://mvnrepository.com/artifact/com.holdenkarau/spark-testing-base
+    compile group: 'com.holdenkarau', name: 'spark-testing-base_2.11', version: '2.1.1_0.14.0'
+
+
+}
+
+
+
