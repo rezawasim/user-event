@@ -1,4 +1,4 @@
-# Spark eventReader And Session Finder
+# Spark eventReader And Event Sequence Finder
 
 A Sample Project for reading json file and saving sessionLength, eventSequence
 
