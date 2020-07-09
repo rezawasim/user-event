@@ -9,9 +9,9 @@ if [[ ${MAIN_CLASS} = "" ]]; then
     MAIN_CLASS="main.Main"
 fi
 echo "${MAIN_CLASS}"
-lib_dir="$(pwd)/build/distributions/user-session-management-1.0.0/lib"
+lib_dir="$(pwd)/build/distributions/user-event-1.0.0/lib"
 echo "$lib_dir"
-project_name="user-session-management-1.0.0"
+project_name="user-event-1.0.0"
 f_name="";
 command="";
 a=0;

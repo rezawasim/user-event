@@ -14,7 +14,7 @@ else
 fi
 cd build/distributions
 echo "Unzipping the order service folder version ${VERSION}"
-unzip user-session-management-1.0.0.zip
+unzip user-event-1.0.0.zip
 cd ../../
 ./executeScalaSubmit.sh main.Main
 

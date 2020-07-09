@@ -1,6 +1,6 @@
 # Spark eventReader And Session Finder
 
-A Sample Project for reading tsv and json file and finding session duration.
+A Sample Project for reading json file and saving sessionLength, eventSequence
 
 
 ## Prereuisite
@@ -9,17 +9,18 @@ scala 2.11.8
 
 
 # build and test Steps
-git clone https://github.com/rezawasim/user-session-management.git
-cd user-session-management
+git clone https://github.com/rezawasim/user-event.git
+cd user-event
 ./gradlew clean build
 
 ## To Run the Application 
 ./gradlew run  
 #### default Input --> ./sampleFile  
-#### defaultOutput --> ./sessionDuration, ./userSession 
+#### defaultOutput --> ./output 
 
-#### sessionDuration contains sessionId duration
-#### userSession contains each user's average session duration and sessionCount              
+#### eventSequence contains first and second defining action, ordered based on time
+#### userRegion contains Count of "calc_userid" for each "region".
+#### sessionDuration contains average session duration              
 
 #Cluser Deployemt
 To deploy in a cluster we need cluster manager(eg yarn)
