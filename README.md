@@ -9,8 +9,8 @@ scala 2.11.8
 
 
 # build and test Steps
-git clone https://github.com/rezawasim/user-event.git
-cd user-event
+ git clone https://github.com/rezawasim/user-event.git
+ cd user-event
 ./gradlew clean build
 
 ## To Run the Application 
